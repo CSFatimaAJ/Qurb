@@ -11,6 +11,7 @@ struct Start: View {
     var catogray: Category?
  
 
+    
     var body: some View {
         
         NavigationView{
