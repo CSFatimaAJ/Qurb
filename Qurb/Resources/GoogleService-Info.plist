@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>351235501183-b0l5hkeu2utod5t98tdl33ikvdk7n8kl.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.351235501183-b0l5hkeu2utod5t98tdl33ikvdk7n8kl</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDxK94Il5vvlkSuQLjg2hvJRPC5eMEPjiA</string>
+	<key>GCM_SENDER_ID</key>
+	<string>351235501183</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.AppleAcademy.Qurb</string>
+	<key>PROJECT_ID</key>
+	<string>qurb-5c032</string>
+	<key>STORAGE_BUCKET</key>
+	<string>qurb-5c032.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:351235501183:ios:72b2a94b667570d745a34a</string>
+	<key>DATABASE_URL</key>
+	<string>https://qurb-5c032-default-rtdb.firebaseio.com</string>
+</dict>
+</plist>
