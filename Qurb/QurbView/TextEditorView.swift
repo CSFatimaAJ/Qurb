@@ -33,6 +33,9 @@ struct CustomTextEditor: View {
                 .frame(width: 332, height: 273).cornerRadius(8)
                 .disableAutocorrection(true)
                 .lineSpacing(5)
+                .scrollContentBackground(.hidden)
+                .background(Color("OT"))
+            
             
             if text.isEmpty{
                 

@@ -24,3 +24,6 @@ struct Page: Identifiable, Equatable {
         Page(name: "لاتنسى تقييم مشاعرك لتتطوير والحفاظ على جودة الخدمة", imageUrl: "r", tag: 2),
     ]
 
+
+
+

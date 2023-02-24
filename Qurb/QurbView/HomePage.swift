@@ -21,25 +21,22 @@ struct HomePage: View {
             ZStack {
                 Color("background").edgesIgnoringSafeArea(.all)
                 Image("b2")
-                
                     .resizable()
                     .ignoresSafeArea()
-                
                 VStack(alignment: .trailing){
-                    VStack(alignment:.leading){
+                    VStack(alignment:.trailing){
                         Text("مرحبًا..")
-//                            .foregroundColor(Color(red: 0.384, green: 0.251, blue: 0.463))
                             .foregroundColor(Color.white)
-                            .font(.custom("HSN Sara", size: 30))
+                            .font(.custom("HSN Sara", size: 24))
                         //    .multilineTextAlignment(.trailing)
                             .bold()
                         Text("كيف حالك اليوم؟")
                             .foregroundColor(Color.white)
-                            .font(.custom("HSN Sara", size: 30))
+                            .font(.custom("HSN Sara", size: 24))
                             //.multilineTextAlignment(.trailing)
                             .bold()
                         
-                    }.padding(.trailing,120)
+                    }.padding(.trailing,28)
                 
 //
                     //        ScrollView {

@@ -93,7 +93,10 @@ struct RatingView: View {
                         .multilineTextAlignment(.trailing)
                         .frame(width: 350, height:120)
                         .padding(.top)
-                        .foregroundColor(.gray)
+                        .foregroundColor(Color("BG"))
+                        .scrollContentBackground(.hidden)
+                        .background(Color("OT"))
+                        
                         .onChange(of: Note) { note in
                             self.Note = note
                         }

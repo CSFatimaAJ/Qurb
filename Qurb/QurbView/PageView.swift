@@ -11,7 +11,7 @@ struct PageView: View {
     var page: Page
     
     var body: some View {
-        VStack(spacing: 10) {
+        VStack(spacing: 20) {
             Image("\(page.imageUrl)")
                 .resizable()
                 .scaledToFit()

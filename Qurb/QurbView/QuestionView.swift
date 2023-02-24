@@ -7,6 +7,13 @@
 
 import SwiftUI
 
+extension View {
+    
+    func dismisskeyboard(){
+        UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
+    }
+}
+
 
 struct QuestionView: View {
     
@@ -70,8 +77,11 @@ struct QuestionView: View {
                         //          RatingView()
                         //    }.navigationBarBackButtonHidden(true)
                     }
-                }
+                } 
             }
+        } .onTapGesture {
+            self.dismisskeyboard()
+            
         }
         
     }
@@ -85,13 +95,13 @@ struct QuestionView: View {
                     RoundedRectangle(cornerRadius: 7 , style: .continuous)
                         .strokeBorder(Color("PB"), lineWidth:1)
                         .frame(width: width1, height: height1).foregroundColor(Color("PB"))
-                        .padding(.leading,96)
+                        .padding(.leading,74)
                     
                     RoundedRectangle(cornerRadius: 4 , style: .continuous)
                         .padding(.leading, 3.0)
                         .foregroundColor(Color("PB"))
                         .frame(width: getProgressGradientWidth(progress: CGFloat(progressPercentage), totalWidth: geoReader.size.width), height: height2)
-                        .padding(.leading,96)
+                        .padding(.leading,74)
                     
                         .animation(.spring())
                     
