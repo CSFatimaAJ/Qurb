@@ -21,7 +21,7 @@ struct PageView: View {
                 .padding()
             
             Text(page.name)
-                .font(.custom("HSN Sara", size: 25))
+                .font(.custom("HSN Sara", size: 20))
                 .foregroundColor(Color.white)
                 .multilineTextAlignment(.center)
                 .padding(.all)
