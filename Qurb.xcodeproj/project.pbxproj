@@ -23,7 +23,6 @@
 		3CDD270C29A4B0C9003156B8 /* OnBoardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CDD270B29A4B0C9003156B8 /* OnBoardingView.swift */; };
 		3CDD270E29A4B11C003156B8 /* PageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CDD270D29A4B11C003156B8 /* PageModel.swift */; };
 		3CDD271029A4B127003156B8 /* PageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CDD270F29A4B127003156B8 /* PageView.swift */; };
-		3CDD271229A4B4ED003156B8 /* boarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CDD271129A4B4ED003156B8 /* boarding.swift */; };
 		A5F800F129937F5C00DF764E /* Qurbview.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F800F029937F5C00DF764E /* Qurbview.swift */; };
 		A5F800F329937F5D00DF764E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5F800F229937F5D00DF764E /* Assets.xcassets */; };
 		A5F800F729937F5D00DF764E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5F800F629937F5D00DF764E /* Preview Assets.xcassets */; };
@@ -52,7 +51,6 @@
 		3C5490FA2998D65100629971 /* Rancho-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rancho-Regular.ttf"; sourceTree = "<group>"; };
 		3C5490FE299A293C00629971 /* TextEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextEditorView.swift; sourceTree = "<group>"; };
 		3C549103299ABAD900629971 /* QuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionView.swift; sourceTree = "<group>"; };
-		3CDD26EA29A350BC003156B8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		3CDD26ED29A3543D003156B8 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
 		3CDD26FD29A362BD003156B8 /* QurbApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QurbApp.swift; sourceTree = "<group>"; };
 		3CDD26FF29A362C2003156B8 /* Splash.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Splash.swift; sourceTree = "<group>"; };
@@ -64,7 +62,6 @@
 		3CDD270B29A4B0C9003156B8 /* OnBoardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingView.swift; sourceTree = "<group>"; };
 		3CDD270D29A4B11C003156B8 /* PageModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageModel.swift; sourceTree = "<group>"; };
 		3CDD270F29A4B127003156B8 /* PageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageView.swift; sourceTree = "<group>"; };
-		3CDD271129A4B4ED003156B8 /* boarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = boarding.swift; sourceTree = "<group>"; };
 		A5F800EB29937F5C00DF764E /* Qurb.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Qurb.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5F800F029937F5C00DF764E /* Qurbview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Qurbview.swift; sourceTree = "<group>"; };
 		A5F800F229937F5D00DF764E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -132,7 +129,6 @@
 				3C5490FE299A293C00629971 /* TextEditorView.swift */,
 				3C549103299ABAD900629971 /* QuestionView.swift */,
 				CB185B5129A61143000EE009 /* RatingView.swift */,
-				3CDD271129A4B4ED003156B8 /* boarding.swift */,
 			);
 			path = QurbView;
 			sourceTree = "<group>";
@@ -306,7 +302,6 @@
 				3CDD270229A362C8003156B8 /* ContentView.swift in Sources */,
 				A5F800F129937F5C00DF764E /* Qurbview.swift in Sources */,
 				3CDD270C29A4B0C9003156B8 /* OnBoardingView.swift in Sources */,
-				3CDD271229A4B4ED003156B8 /* boarding.swift in Sources */,
 				CB185B5029A60B2E000EE009 /* RatingViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -317,7 +312,6 @@
 		3CDD26EB29A350BC003156B8 /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				3CDD26EA29A350BC003156B8 /* en */,
 				3CDD26ED29A3543D003156B8 /* ar */,
 			);
 			name = Localizable.strings;

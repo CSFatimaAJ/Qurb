@@ -26,4 +26,10 @@ struct Page: Identifiable, Equatable {
 
 
 
-
+//
+//var samplePages: [Page] = [
+//    Page(name: "مساحات كتابية علاجية لتفريغ المشاعر وتعزيز الطاقة الإيجابية ", imageUrl: "m1", tag: 0),
+//    Page(name: " خصوصية تامة شارك مشاعرك بثقة لن يتم حفظ أي بيانات خاصة فيك", imageUrl: "m2", tag: 1),
+//    Page(name: "لاتنسى تقييم مشاعرك لتتطوير والحفاظ على جودة الخدمة", imageUrl: "r", tag: 2),
+//]
+//

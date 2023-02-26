@@ -42,13 +42,16 @@ struct QuestionView: View {
                     // for playing questions
                     if(self.i < questionCount){
                         
-                        Text("خطوة خطوة بتقربك لذاتك").foregroundColor(Color("OT")).font(.custom("HSN Sara", size: 13))
+                        Text("Step after step make you closer to yourself").foregroundColor(Color("OT")).font(.custom("Rancho-Regular", size: 22))
                             .padding(.top, 130)
                         
                         lineProgress
                         
                         // text of questions
-                        Text(catogray?.question[self.i].question ?? "test").foregroundColor(Color("OT")).font(.custom("HSN Sara", size: 24))
+                        Text(catogray?.question[self.i].question ?? "test").foregroundColor(Color("OT")).font(.custom("Rancho-Regular", size: 30))
+                            .multilineTextAlignment(.leading)
+                            .padding(.top, 80)
+                            .padding(.leading, 30)
                         
                         TextEditorView()
                             .padding(.bottom,97)
@@ -59,15 +62,15 @@ struct QuestionView: View {
                             guard progressPercentage < 100 else { return }
                             progressPercentage += 8
                         }, label: {
-                            Text("التالي").font(.custom("HSN Sara", size: 20))
+                            Text("Next").font(.custom("Rancho-Regular", size: 25))
                                 .padding(19.0)
                                 .frame(width: width, height: height).cornerRadius(15)
                                 .foregroundColor(Color("BT"))
                                 .background(RoundedRectangle(cornerRadius: 15))
                                 .foregroundColor(Color("OT"))
                         })
-                        .padding(.bottom,68)
-                        .padding(.leading, 233)
+                        .padding(.bottom,80)
+                        .padding(.leading, 200)
                         
                     }
                     
@@ -95,13 +98,13 @@ struct QuestionView: View {
                     RoundedRectangle(cornerRadius: 7 , style: .continuous)
                         .strokeBorder(Color("PB"), lineWidth:1)
                         .frame(width: width1, height: height1).foregroundColor(Color("PB"))
-                        .padding(.leading,74)
+                        .padding(.leading,75)
                     
                     RoundedRectangle(cornerRadius: 4 , style: .continuous)
                         .padding(.leading, 3.0)
                         .foregroundColor(Color("PB"))
                         .frame(width: getProgressGradientWidth(progress: CGFloat(progressPercentage), totalWidth: geoReader.size.width), height: height2)
-                        .padding(.leading,74)
+                        .padding(.leading,75)
                     
                         .animation(.spring())
                     

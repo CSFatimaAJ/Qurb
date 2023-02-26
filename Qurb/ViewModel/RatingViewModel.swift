@@ -33,7 +33,7 @@ class RatingViewModel: ObservableObject {
                print("Data could not be saved: \(error).")
              } else {
                  self.responseStatue = true
-                 self.responseResult = "تقيمك يخلينا افضل واقرب"
+                 self.responseResult = "Your rating makes us happier."
                print("Data saved successfully!")
              }
            }

@@ -20,10 +20,10 @@ struct OnBoardingView: View {
                     NextPage.toggle()
                 })
                 {
-                    Text("تخطي")
+                    Text("Skip")
                         .foregroundColor(.white)
-                        .padding(.trailing, 290)
-                        .font(.custom("HSN Sara", size: 17))
+                        .padding(.leading, 290)
+                        .font(.custom("Rancho-Regular", size: 24))
                     // .padding(.leading, 291.0)
                     //
                 }
@@ -44,8 +44,8 @@ struct OnBoardingView: View {
                     
                 })
                 {
-                    Text("التالي")
-                        .font(.custom("HSN Sara", size: 20))
+                    Text("Next")
+                        .font(.custom("Rancho-Regular", size: 25))
                         .foregroundColor(Color(red: 0.384, green: 0.251, blue: 0.463))
                         .multilineTextAlignment(.center)
                     // .padding(.trailing, 200)

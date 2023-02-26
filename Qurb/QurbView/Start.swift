@@ -24,28 +24,37 @@ struct Start: View {
          
                 VStack{
                     
-                    Spacer()
-                        .frame(height: 100)
-                    Text("استرخي وخد نفس عميق ويلا خد خطوه لنفسك مع نفسك")
+//                    Spacer()
+//                        .frame(height: 100)
+                    Text("Relax, Have a deep breath ..")
                         .foregroundColor(Color.white)
-                        .font(.custom("HSN Sara", size: 25))
+                        .font(.custom("Rancho-Regular", size: 25))
                         .fontWeight(.light)
                         .multilineTextAlignment(.center)
                         .lineLimit(2)
                         .padding(.horizontal)
+                    Text("Then take a step for yourself with yourself")
+                        .foregroundColor(Color.white)
+                        .font(.custom("Rancho-Regular", size: 25))
+                        .fontWeight(.light)
+                        .multilineTextAlignment(.center)
+                        .lineLimit(2)
+                        .padding(.all)
                     //                Button("ابدأ"){
                     //
                     //                                                           }
+                    Spacer()
+                        .frame(height: 30)
                     NavigationLink {
                         QuestionView(catogray: catogray,questionCount: catogray?.question.count ?? 0).navigationBarBackButtonHidden(true)
 
                     } label: {
-                        Text("ابدأ")
+                        Text("Start")
                     }.navigationBarBackButtonHidden(true)
                    
                    
                     .foregroundColor(Color(red: 0.384, green: 0.251, blue: 0.463))
-                    .font(.custom("HSN Sara", size: 25))
+                    .font(.custom("Rancho-Regular", size: 25))
                     .foregroundColor(.white)
                     .frame(width: 128,height: 50)
                     .background(Color.white)

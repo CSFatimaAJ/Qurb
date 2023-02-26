@@ -28,8 +28,10 @@ final class HomePageViewModel: ObservableObject {
       }()
 
     func fetchCategory() {
-
-        databasePath?.observeSingleEvent(of: .value) { [weak self] (snapshot,error)  in
+        guard let lng = Locale.current.language.languageCode?.identifier.uppercased() else {
+            return
+        }
+        databasePath?.child("\(lng)").observeSingleEvent(of: .value) { [weak self] (snapshot,error)  in
             guard
                 var json = snapshot.value as? NSDictionary
             else {

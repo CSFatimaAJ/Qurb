@@ -15,13 +15,14 @@ struct PageView: View {
             Image("\(page.imageUrl)")
                 .resizable()
                 .scaledToFit()
+                .frame(width: 200, height: 200)
                 .padding()
                 .cornerRadius(30)
 //               
                 .padding()
             
             Text(page.name)
-                .font(.custom("HSN Sara", size: 20))
+                .font(.custom("Rancho-Regular", size: 20))
                 .foregroundColor(Color.white)
                 .multilineTextAlignment(.center)
                 .padding(.all)

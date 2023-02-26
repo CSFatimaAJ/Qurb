@@ -18,12 +18,12 @@ struct RatingView: View {
     ]
     @State var level : Int = 0
     var RatingData = RatingModel()
-    var Thankyou = "شكرا لك لمشاركتك"
+    var Thankyou = "Thank You"
     var categoryID:String?
     @State var pressed : Bool = true
     @State var ispresented = false
     @State var isAlerted = false
-    @State var Note: String = "ملاحظاتك تسعدنا ...."
+    @State var Note: String = "Your notes makes us happier.."
     @State var ratingState : RatingLevels = .happy
     @ObservedObject var viewModel = RatingViewModel() // (2)
 
@@ -38,19 +38,22 @@ struct RatingView: View {
                 .ignoresSafeArea()
             VStack(alignment: .center, spacing: 25){
                 VStack(alignment: .center, spacing: -5){
-                    Text("وخلصت الرحله")
-                    Text("خد نفس عميق واشكر نفسك")
-                    Text("وقلنا")
+                    Text("Your journey has been finished ")
+                        .padding(.bottom)
+                    Text("Take a deep breath,")
+                        .padding(.bottom)
+                    Text("Tell us you feelings")
                 }
                 .foregroundColor(Color.white)
-                    .font(.custom("HSN Sara", size: 24))
+                    .font(.custom("Rancho-Regular", size: 24))
                     .multilineTextAlignment(.center)
                     .bold()
                 VStack{
-                    Text("كيف حالك الان ؟").foregroundColor(Color.white)
-                        .font(.custom("HSN Sara", size: 24))
+                    Text("How do feel now?").foregroundColor(Color.white)
+                        .font(.custom("Rancho-Regular", size: 24))
                         .multilineTextAlignment(.center)
                         .bold()
+                        .padding(.top)
             
                     LazyVGrid(columns: Ratingcolumns) {
                         ForEach (RatingData.getRatingLevels().indices, id: \.self) { i in
@@ -85,22 +88,24 @@ struct RatingView: View {
                         }
 
                     }.frame(width: 260)
-                    
+                        .padding(.bottom, 35)
                     TextEditor(text: $Note)
                         .textFieldStyle(.roundedBorder)
-                        .font(.custom("HSN Sara", size: 15))
+                        .font(.custom("Rancho-Regular", size: 15))
                         .lineLimit(5, reservesSpace: true)
-                        .multilineTextAlignment(.trailing)
+                        .multilineTextAlignment(.leading)
                         .frame(width: 350, height:120)
                         .padding(.top)
                         .foregroundColor(Color("BG"))
                         .scrollContentBackground(.hidden)
                         .background(Color("OT"))
-                        
+                        .cornerRadius(8)
                         .onChange(of: Note) { note in
                             self.Note = note
                         }
-                    Button("تم") {
+                    Spacer()
+                        .frame(height: 59)
+                    Button("Done") {
                         viewModel.addRate(Rate: self.ratingState.rawValue, Note: self.Note, CategoreID: self.categoryID)
                     }.onReceive(viewModel.$responseStatue, perform: { res in
                         if res {
@@ -110,17 +115,17 @@ struct RatingView: View {
                         Button {
                             self.isAlerted = true
                           } label: {
-                              Text("اقرب لذاتك")
+                              Text("Closer to yourself")
                                   .bold()
                                   .foregroundColor(Color("background"))
                           }
                           .foregroundColor(Color("background"))
                     } message: {
-                          Text(viewModel.responseResult).font(Font.custom("HSN Sara", size: 24))
+                          Text(viewModel.responseResult).font(Font.custom("Rancho-Regular", size: 24))
                             .foregroundColor(Color("background"))
                       }
 
-                    .font(Font.custom("HSN Sara", size: 24)).foregroundColor(Color("background")).background(
+                    .font(Font.custom("Rancho-Regular", size: 24)).foregroundColor(Color("background")).background(
                         Rectangle()
                             .frame(width: 128, height: 50, alignment: .center)
                             .foregroundColor(.white)
