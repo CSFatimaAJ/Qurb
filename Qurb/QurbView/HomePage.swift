@@ -5,6 +5,7 @@
 //  Created by Maryam on 23/07/1444 AH.
 //
 
+
 import SwiftUI
 
 struct HomePage: View {
@@ -15,7 +16,6 @@ struct HomePage: View {
     ]
     @ObservedObject var viewModel = HomePageViewModel() // (2)
     @StateObject var categories = HomePageViewModel() // (2)
-
     var body: some View {
         NavigationView{
             ZStack {
@@ -23,20 +23,20 @@ struct HomePage: View {
                 Image("b2")
                     .resizable()
                     .ignoresSafeArea()
-                VStack(alignment: .trailing){
-                    VStack(alignment:.trailing){
-                        Text("مرحبًا..")
+                VStack(alignment: .leading){
+                    VStack(alignment:.leading){
+                        Text("Hello ..")
                             .foregroundColor(Color.white)
-                            .font(.custom("HSN Sara", size: 24))
+                            .font(.custom("Rancho-Regular", size: 35))
                         //    .multilineTextAlignment(.trailing)
                             .bold()
-                        Text("كيف حالك اليوم؟")
+                        Text("How do you feel today?")
                             .foregroundColor(Color.white)
-                            .font(.custom("HSN Sara", size: 24))
+                            .font(.custom("Rancho-Regular", size: 35))
                             //.multilineTextAlignment(.trailing)
                             .bold()
                         
-                    }.padding(.trailing,28)
+                    }.padding(.leading,28)
                 
 //
                     //        ScrollView {
@@ -48,7 +48,7 @@ struct HomePage: View {
                         label: {
                             Text(self.categories.categories?[i]?.name ?? "")
                                 .foregroundColor(Color(red: 0.384, green: 0.251, blue: 0.463))
-                                .font(.custom("HSN Sara", size: 30))
+                                .font(.custom("Rancho-Regular", size: 30))
                                 .frame(width: 130,height: 120)
                                 .bold()
                                 .padding()
