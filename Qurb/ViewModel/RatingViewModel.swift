@@ -7,7 +7,7 @@
 
 import Foundation
 import SwiftUI
-
+import SCLAlertView
 import FirebaseDatabase
 
 class RatingViewModel: ObservableObject {
@@ -33,11 +33,14 @@ class RatingViewModel: ObservableObject {
                print("Data could not be saved: \(error).")
              } else {
                  self.responseStatue = true
-                 self.responseResult = "Your rating makes us happier."
+                 self.responseResult = "نقدر الحين نتحسن ونحسن"
+          //
+                 //self.showSuccessAlert(message: messageSuccess)
                print("Data saved successfully!")
              }
            }
        
      }
+
     
 }

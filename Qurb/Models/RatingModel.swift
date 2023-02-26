@@ -6,7 +6,7 @@
 //
 
 import Foundation
-
+import SCLAlertView
 struct RatingModel{
     
     var CategoreID : String?
@@ -32,6 +32,7 @@ struct RatingModel{
             return pressed ? "te" : "re"
         }
     }
+
 }
 
 enum RatingLevels: String {

@@ -6,8 +6,8 @@
 //
 
 import SwiftUI
-
-
+import SCLAlertView
+import UIKit
 struct RatingView: View {
     
     let Ratingcolumns = [
@@ -110,27 +110,34 @@ struct RatingView: View {
                     }.onReceive(viewModel.$responseStatue, perform: { res in
                         if res {
                             self.ispresented = res
+                            self.showSuccessAlert(message: "نقدر الحين نتحسن ونحسن")
                         }
-                    }).alert(self.Thankyou,isPresented: $ispresented) {
-                        Button {
-                            self.isAlerted = true
-                          } label: {
-                              Text("Closer to yourself")
-                                  .bold()
-                                  .foregroundColor(Color("background"))
-                          }
-                          .foregroundColor(Color("background"))
-                    } message: {
-                          Text(viewModel.responseResult).font(Font.custom("Rancho-Regular", size: 24))
-                            .foregroundColor(Color("background"))
-                      }
-
-                    .font(Font.custom("Rancho-Regular", size: 24)).foregroundColor(Color("background")).background(
+                    })                    .font(Font.custom("Rancho-Regular", size: 24)).foregroundColor(Color("background")).background(
                         Rectangle()
                             .frame(width: 128, height: 50, alignment: .center)
                             .foregroundColor(.white)
                             .cornerRadius(15)
                         )
+//                    ).alert(self.Thankyou,isPresented: $ispresented) {
+//                        Button {
+//                            self.isAlerted = true
+//                          } label: {
+//                              Text("Closer to yourself")
+//                                  .bold()
+//                                  .foregroundColor(Color("background"))
+//                          }
+//                          .foregroundColor(Color("background"))
+//                    } message: {
+//                          Text(viewModel.responseResult).font(Font.custom("Rancho-Regular", size: 24))
+//                            .foregroundColor(Color("background"))
+//                      }
+//
+//                    .font(Font.custom("Rancho-Regular", size: 24)).foregroundColor(Color("background")).background(
+//                        Rectangle()
+//                            .frame(width: 128, height: 50, alignment: .center)
+//                            .foregroundColor(.white)
+//                            .cornerRadius(15)
+//                        )
                         
                     
                 }
@@ -138,7 +145,29 @@ struct RatingView: View {
             }
         }
     }
-    
+    func showSuccessAlert(message: String?) {
+        guard message != nil else {
+            print("showErrorAlert(): No message to display.")
+            return
+        }
+        DispatchQueue.main.async {
+            let appearance = SCLAlertView.SCLAppearance(
+                kTitleFont: UIFont(name: "HSN Sara", size: 20)!,
+                kTextFont: UIFont(name: "HSN Sara", size: 16)!,
+                kButtonFont: UIFont(name: "HSN Sara", size: 14)!,
+                showCloseButton: false, dynamicAnimatorActive: true
+
+            )
+            
+            let alert = SCLAlertView(appearance:appearance)
+            alert.addButton("العودة الى البدايه") {
+                self.isAlerted = true
+
+            }
+            
+            alert.showCustom("شكرا لتقيمك",subTitle:message!, color: UIColor(Color("background")), icon: UIImage(named: "checkmark")!)
+        }
+    }
    
 }
 
@@ -164,6 +193,7 @@ struct filled: View {
            
         }
     }
+
 }
 struct RatingView_Previews: PreviewProvider {
     static var previews: some View {

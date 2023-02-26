@@ -28,10 +28,8 @@
 		A5F800F729937F5D00DF764E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5F800F629937F5D00DF764E /* Preview Assets.xcassets */; };
 		CB185B3629A534C7000EE009 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = CB185B3529A534C7000EE009 /* FirebaseAuth */; };
 		CB185B3829A534C7000EE009 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = CB185B3729A534C7000EE009 /* FirebaseDatabase */; };
-		CB185B3A29A534C7000EE009 /* FirebaseDatabaseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = CB185B3929A534C7000EE009 /* FirebaseDatabaseSwift */; };
 		CB185B3C29A534C7000EE009 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = CB185B3B29A534C7000EE009 /* FirebaseFirestore */; };
 		CB185B3E29A534C7000EE009 /* FirebaseFirestoreCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = CB185B3D29A534C7000EE009 /* FirebaseFirestoreCombine-Community */; };
-		CB185B4029A534C7000EE009 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = CB185B3F29A534C7000EE009 /* FirebaseFirestoreSwift */; };
 		CB185B4229A534C7000EE009 /* FirebaseInAppMessaging-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = CB185B4129A534C7000EE009 /* FirebaseInAppMessaging-Beta */; };
 		CB185B4429A534C7000EE009 /* FirebaseInAppMessagingSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = CB185B4329A534C7000EE009 /* FirebaseInAppMessagingSwift-Beta */; };
 		CB185B4629A534C7000EE009 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = CB185B4529A534C7000EE009 /* FirebaseMessaging */; };
@@ -42,7 +40,27 @@
 		CB185B5229A61143000EE009 /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB185B5129A61143000EE009 /* RatingView.swift */; };
 		CB185B5429A619C4000EE009 /* category.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB185B5329A619C3000EE009 /* category.swift */; };
 		CB185B5629A64366000EE009 /* HomePageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB185B5529A64366000EE009 /* HomePageViewModel.swift */; };
+		CB1B3A7E29AB748F00833D5C /* spinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1B3A7D29AB748F00833D5C /* spinner.swift */; };
+		CBD72CE029AB5AF200D230EA /* Pods_Qurb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A70CB9B3B9A94826A76DC2C /* Pods_Qurb.framework */; };
+		CBD72CE129AB5AF200D230EA /* Pods_Qurb.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7A70CB9B3B9A94826A76DC2C /* Pods_Qurb.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CBD72CE429AB5E4000D230EA /* FirebaseDatabaseSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = CBD72CE329AB5E4000D230EA /* FirebaseDatabaseSwift-Beta */; };
+		CBD72CE629AB5E4800D230EA /* FirebaseFirestoreSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = CBD72CE529AB5E4800D230EA /* FirebaseFirestoreSwift-Beta */; };
+		CBD72CE829AB5E6F00D230EA /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = CBD72CE729AB5E6F00D230EA /* FirebaseAnalytics */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CBD72CE229AB5AF200D230EA /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CBD72CE129AB5AF200D230EA /* Pods_Qurb.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		3C5490EC2998228900629971 /* questionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = questionModel.swift; sourceTree = "<group>"; };
@@ -62,6 +80,9 @@
 		3CDD270B29A4B0C9003156B8 /* OnBoardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingView.swift; sourceTree = "<group>"; };
 		3CDD270D29A4B11C003156B8 /* PageModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageModel.swift; sourceTree = "<group>"; };
 		3CDD270F29A4B127003156B8 /* PageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageView.swift; sourceTree = "<group>"; };
+		7A70CB9B3B9A94826A76DC2C /* Pods_Qurb.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Qurb.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9BB1C83EF6B34D2A53E33A43 /* Pods-Qurb.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Qurb.debug.xcconfig"; path = "Target Support Files/Pods-Qurb/Pods-Qurb.debug.xcconfig"; sourceTree = "<group>"; };
+		A15AF33F95B077207572DDDE /* Pods-Qurb.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Qurb.release.xcconfig"; path = "Target Support Files/Pods-Qurb/Pods-Qurb.release.xcconfig"; sourceTree = "<group>"; };
 		A5F800EB29937F5C00DF764E /* Qurb.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Qurb.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5F800F029937F5C00DF764E /* Qurbview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Qurbview.swift; sourceTree = "<group>"; };
 		A5F800F229937F5D00DF764E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -73,6 +94,7 @@
 		CB185B5129A61143000EE009 /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
 		CB185B5329A619C3000EE009 /* category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = category.swift; sourceTree = "<group>"; };
 		CB185B5529A64366000EE009 /* HomePageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewModel.swift; sourceTree = "<group>"; };
+		CB1B3A7D29AB748F00833D5C /* spinner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = spinner.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,16 +102,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBD72CE829AB5E6F00D230EA /* FirebaseAnalytics in Frameworks */,
 				CB185B4629A534C7000EE009 /* FirebaseMessaging in Frameworks */,
-				CB185B3A29A534C7000EE009 /* FirebaseDatabaseSwift in Frameworks */,
 				CB185B4229A534C7000EE009 /* FirebaseInAppMessaging-Beta in Frameworks */,
 				CB185B4829A534C7000EE009 /* FirebaseStorage in Frameworks */,
+				CBD72CE629AB5E4800D230EA /* FirebaseFirestoreSwift-Beta in Frameworks */,
 				CB185B4429A534C7000EE009 /* FirebaseInAppMessagingSwift-Beta in Frameworks */,
 				CB185B3C29A534C7000EE009 /* FirebaseFirestore in Frameworks */,
+				CBD72CE429AB5E4000D230EA /* FirebaseDatabaseSwift-Beta in Frameworks */,
 				CB185B3829A534C7000EE009 /* FirebaseDatabase in Frameworks */,
 				CB185B3E29A534C7000EE009 /* FirebaseFirestoreCombine-Community in Frameworks */,
 				CB185B3629A534C7000EE009 /* FirebaseAuth in Frameworks */,
-				CB185B4029A534C7000EE009 /* FirebaseFirestoreSwift in Frameworks */,
+				CBD72CE029AB5AF200D230EA /* Pods_Qurb.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,11 +176,21 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
+		5BAABEF0AF1605DEDF1B1552 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7A70CB9B3B9A94826A76DC2C /* Pods_Qurb.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A5F800E229937F5C00DF764E = {
 			isa = PBXGroup;
 			children = (
 				A5F800ED29937F5C00DF764E /* Qurb */,
 				A5F800EC29937F5C00DF764E /* Products */,
+				D7D38C20A0BBA89782371E9D /* Pods */,
+				5BAABEF0AF1605DEDF1B1552 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -175,6 +209,7 @@
 				3CDD26FD29A362BD003156B8 /* QurbApp.swift */,
 				3CDD26FF29A362C2003156B8 /* Splash.swift */,
 				3CDD270129A362C8003156B8 /* ContentView.swift */,
+				CB1B3A7D29AB748F00833D5C /* spinner.swift */,
 				3C5490F32998284E00629971 /* QurbView */,
 				3C5490F2299825D300629971 /* ViewModel */,
 				3C5490F0299825A600629971 /* Models */,
@@ -194,6 +229,15 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		D7D38C20A0BBA89782371E9D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9BB1C83EF6B34D2A53E33A43 /* Pods-Qurb.debug.xcconfig */,
+				A15AF33F95B077207572DDDE /* Pods-Qurb.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -201,9 +245,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A5F800FA29937F5D00DF764E /* Build configuration list for PBXNativeTarget "Qurb" */;
 			buildPhases = (
+				50BD888514D78E9468FB77BD /* [CP] Check Pods Manifest.lock */,
 				A5F800E729937F5C00DF764E /* Sources */,
 				A5F800E829937F5C00DF764E /* Frameworks */,
 				A5F800E929937F5C00DF764E /* Resources */,
+				5BE2F4674574CA8CEB7D40E3 /* [CP] Embed Pods Frameworks */,
+				CBD72CE229AB5AF200D230EA /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -213,14 +260,15 @@
 			packageProductDependencies = (
 				CB185B3529A534C7000EE009 /* FirebaseAuth */,
 				CB185B3729A534C7000EE009 /* FirebaseDatabase */,
-				CB185B3929A534C7000EE009 /* FirebaseDatabaseSwift */,
 				CB185B3B29A534C7000EE009 /* FirebaseFirestore */,
 				CB185B3D29A534C7000EE009 /* FirebaseFirestoreCombine-Community */,
-				CB185B3F29A534C7000EE009 /* FirebaseFirestoreSwift */,
 				CB185B4129A534C7000EE009 /* FirebaseInAppMessaging-Beta */,
 				CB185B4329A534C7000EE009 /* FirebaseInAppMessagingSwift-Beta */,
 				CB185B4529A534C7000EE009 /* FirebaseMessaging */,
 				CB185B4729A534C7000EE009 /* FirebaseStorage */,
+				CBD72CE329AB5E4000D230EA /* FirebaseDatabaseSwift-Beta */,
+				CBD72CE529AB5E4800D230EA /* FirebaseFirestoreSwift-Beta */,
+				CBD72CE729AB5E6F00D230EA /* FirebaseAnalytics */,
 			);
 			productName = Qurb;
 			productReference = A5F800EB29937F5C00DF764E /* Qurb.app */;
@@ -279,6 +327,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		50BD888514D78E9468FB77BD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Qurb-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5BE2F4674574CA8CEB7D40E3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Qurb/Pods-Qurb-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Qurb/Pods-Qurb-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Qurb/Pods-Qurb-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A5F800E729937F5C00DF764E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -295,6 +385,7 @@
 				3CDD270829A362E3003156B8 /* Start.swift in Sources */,
 				CB185B4E29A60AFA000EE009 /* RatingModel.swift in Sources */,
 				3C549104299ABAD900629971 /* QuestionView.swift in Sources */,
+				CB1B3A7E29AB748F00833D5C /* spinner.swift in Sources */,
 				3CDD270429A362D4003156B8 /* linkpage.swift in Sources */,
 				3CDD270E29A4B11C003156B8 /* PageModel.swift in Sources */,
 				3CDD26FE29A362BD003156B8 /* QurbApp.swift in Sources */,
@@ -324,6 +415,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -353,6 +445,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -382,6 +475,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -411,6 +505,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -431,14 +526,18 @@
 		};
 		A5F800FB29937F5D00DF764E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9BB1C83EF6B34D2A53E33A43 /* Pods-Qurb.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Qurb/Qurb.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"Qurb/Preview Content\"";
-				DEVELOPMENT_TEAM = HPLUPJ242N;
+				DEVELOPMENT_TEAM = 8CJQHF82R3;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -471,14 +570,18 @@
 		};
 		A5F800FC29937F5D00DF764E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A15AF33F95B077207572DDDE /* Pods-Qurb.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Qurb/Qurb.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"Qurb/Preview Content\"";
-				DEVELOPMENT_TEAM = HPLUPJ242N;
+				DEVELOPMENT_TEAM = 8CJQHF82R3;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -537,8 +640,8 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
 			requirement = {
-				branch = master;
-				kind = branch;
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.1.1;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
@@ -554,11 +657,6 @@
 			package = CB185B3429A534C7000EE009 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseDatabase;
 		};
-		CB185B3929A534C7000EE009 /* FirebaseDatabaseSwift */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = CB185B3429A534C7000EE009 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseDatabaseSwift;
-		};
 		CB185B3B29A534C7000EE009 /* FirebaseFirestore */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = CB185B3429A534C7000EE009 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
@@ -568,11 +666,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = CB185B3429A534C7000EE009 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = "FirebaseFirestoreCombine-Community";
-		};
-		CB185B3F29A534C7000EE009 /* FirebaseFirestoreSwift */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = CB185B3429A534C7000EE009 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseFirestoreSwift;
 		};
 		CB185B4129A534C7000EE009 /* FirebaseInAppMessaging-Beta */ = {
 			isa = XCSwiftPackageProductDependency;
@@ -593,6 +686,21 @@
 			isa = XCSwiftPackageProductDependency;
 			package = CB185B3429A534C7000EE009 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseStorage;
+		};
+		CBD72CE329AB5E4000D230EA /* FirebaseDatabaseSwift-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CB185B3429A534C7000EE009 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseDatabaseSwift-Beta";
+		};
+		CBD72CE529AB5E4800D230EA /* FirebaseFirestoreSwift-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CB185B3429A534C7000EE009 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseFirestoreSwift-Beta";
+		};
+		CBD72CE729AB5E6F00D230EA /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CB185B3429A534C7000EE009 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
