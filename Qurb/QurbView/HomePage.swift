@@ -7,7 +7,6 @@
 
 
 import SwiftUI
-
 struct HomePage: View {
 
     let columns = [
@@ -16,13 +15,21 @@ struct HomePage: View {
     ]
     @ObservedObject var viewModel = HomePageViewModel() // (2)
     @StateObject var categories = HomePageViewModel() // (2)
+
+    @State var isLoading:Bool = true
+
+
     var body: some View {
+       
         NavigationView{
             ZStack {
                 Color("background").edgesIgnoringSafeArea(.all)
                 Image("b2")
                     .resizable()
                     .ignoresSafeArea()
+
+
+
                 VStack(alignment: .leading){
                     VStack(alignment:.leading){
                         Text("Hello ..")
@@ -30,17 +37,22 @@ struct HomePage: View {
                             .font(.custom("Rancho-Regular", size: 35))
                         //    .multilineTextAlignment(.trailing)
                             .bold()
+
+                        Text("How are you today?")
                         Text("How do you feel today?")
+
                             .foregroundColor(Color.white)
                             .font(.custom("Rancho-Regular", size: 35))
                             //.multilineTextAlignment(.trailing)
                             .bold()
                         
                     }.padding(.leading,28)
-                
-//
+
+
+
                     //        ScrollView {
                     LazyVGrid(columns: columns, spacing: 25) {
+
                         ForEach(0..<4) { i in
                             NavigationLink {
                                 Start(catogray: self.categories.categories?[i] ).navigationBarBackButtonHidden(true)
@@ -67,10 +79,19 @@ struct HomePage: View {
                     //        }
                     .frame(maxHeight: 500)
                 }
+                if isLoading {
+                    spinner()
+                }
+
+            }.onReceive(categories.$responseStatue, perform: { res in
+                if res {
+                    self.isLoading = false
+                }
                 
-            }.onAppear {
+            })
+            .onAppear {
                 self.fetch()
-              
+             
             }
         }
             

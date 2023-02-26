@@ -1,0 +1,20 @@
+PODS:
+  - SCLAlertView (0.8)
+  - SVProgressHUD (2.2.5)
+
+DEPENDENCIES:
+  - SCLAlertView
+  - SVProgressHUD
+
+SPEC REPOS:
+  trunk:
+    - SCLAlertView
+    - SVProgressHUD
+
+SPEC CHECKSUMS:
+  SCLAlertView: 6a77bb2edfc65e04dbe57725546cb4107a506b85
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+
+PODFILE CHECKSUM: 1f72732e1f1b45707e4bc9d7bb8676e256c39fef
+
+COCOAPODS: 1.11.3

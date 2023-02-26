@@ -15,9 +15,10 @@ import Foundation
 
 import Foundation
 import SwiftUI
-
+import SCLAlertView
 import FirebaseDatabase
-
+import SVProgressHUD
+import UIKit
 final class HomePageViewModel: ObservableObject {
     
     @Published var responseStatue: Bool = false
@@ -28,10 +29,12 @@ final class HomePageViewModel: ObservableObject {
       }()
 
     func fetchCategory() {
+
         guard let lng = Locale.current.language.languageCode?.identifier.uppercased() else {
             return
         }
         databasePath?.child("\(lng)").observeSingleEvent(of: .value) { [weak self] (snapshot,error)  in
+
             guard
                 var json = snapshot.value as? NSDictionary
             else {
@@ -43,6 +46,7 @@ final class HomePageViewModel: ObservableObject {
                 let categoriesData = try JSONSerialization.data(withJSONObject: json)
                 let data = try JSONDecoder().decode(cateogriesArray.self, from: categoriesData)
                 self?.categories = data.category
+                self?.responseStatue = true
 
             } catch {
                 print("an error occurred", error)
