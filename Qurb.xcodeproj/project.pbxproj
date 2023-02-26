@@ -80,9 +80,12 @@
 		3CDD270B29A4B0C9003156B8 /* OnBoardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingView.swift; sourceTree = "<group>"; };
 		3CDD270D29A4B11C003156B8 /* PageModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageModel.swift; sourceTree = "<group>"; };
 		3CDD270F29A4B127003156B8 /* PageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageView.swift; sourceTree = "<group>"; };
+
 		7A70CB9B3B9A94826A76DC2C /* Pods_Qurb.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Qurb.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BB1C83EF6B34D2A53E33A43 /* Pods-Qurb.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Qurb.debug.xcconfig"; path = "Target Support Files/Pods-Qurb/Pods-Qurb.debug.xcconfig"; sourceTree = "<group>"; };
 		A15AF33F95B077207572DDDE /* Pods-Qurb.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Qurb.release.xcconfig"; path = "Target Support Files/Pods-Qurb/Pods-Qurb.release.xcconfig"; sourceTree = "<group>"; };
+
+
 		A5F800EB29937F5C00DF764E /* Qurb.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Qurb.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5F800F029937F5C00DF764E /* Qurbview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Qurbview.swift; sourceTree = "<group>"; };
 		A5F800F229937F5D00DF764E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };

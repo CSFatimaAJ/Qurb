@@ -38,7 +38,7 @@ struct OnBoardingView: View {
                 //button
                 Button(action : {
                     selectedPage += 1
-                    if selectedPage == 4{
+                    if selectedPage == 3{
                         NextPage = true
                     }
                     

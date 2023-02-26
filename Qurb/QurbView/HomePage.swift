@@ -5,6 +5,7 @@
 //  Created by Maryam on 23/07/1444 AH.
 //
 
+
 import SwiftUI
 struct HomePage: View {
 
@@ -14,7 +15,10 @@ struct HomePage: View {
     ]
     @ObservedObject var viewModel = HomePageViewModel() // (2)
     @StateObject var categories = HomePageViewModel() // (2)
+
     @State var isLoading:Bool = true
+
+
     var body: some View {
        
         NavigationView{
@@ -24,6 +28,8 @@ struct HomePage: View {
                     .resizable()
                     .ignoresSafeArea()
 
+
+
                 VStack(alignment: .leading){
                     VStack(alignment:.leading){
                         Text("Hello ..")
@@ -31,7 +37,10 @@ struct HomePage: View {
                             .font(.custom("Rancho-Regular", size: 35))
                         //    .multilineTextAlignment(.trailing)
                             .bold()
+
                         Text("How are you today?")
+                        Text("How do you feel today?")
+
                             .foregroundColor(Color.white)
                             .font(.custom("Rancho-Regular", size: 35))
                             //.multilineTextAlignment(.trailing)
@@ -39,7 +48,8 @@ struct HomePage: View {
                         
                     }.padding(.leading,28)
 
-//
+
+
                     //        ScrollView {
                     LazyVGrid(columns: columns, spacing: 25) {
 

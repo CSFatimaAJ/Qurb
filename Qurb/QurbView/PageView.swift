@@ -23,6 +23,9 @@ struct PageView: View {
             
             Text(page.name)
                 .font(.custom("Rancho-Regular", size: 20))
+
+                .font(.custom("Rancho-Regular", size: 25))
+
                 .foregroundColor(Color.white)
                 .multilineTextAlignment(.center)
                 .padding(.all)

@@ -18,7 +18,9 @@ struct RatingView: View {
     ]
     @State var level : Int = 0
     var RatingData = RatingModel()
-    var Thankyou = "Thank You"
+
+    var Thankyou = "Thank You🤍"
+
     var categoryID:String?
     @State var pressed : Bool = true
     @State var ispresented = false
@@ -38,11 +40,13 @@ struct RatingView: View {
                 .ignoresSafeArea()
             VStack(alignment: .center, spacing: 25){
                 VStack(alignment: .center, spacing: -5){
-                    Text("Your journey has been finished ")
+
+                    Text("Your journey has been finished .. ")
                         .padding(.bottom)
-                    Text("Take a deep breath,")
+                    Text("Take a deep breath ,")
                         .padding(.bottom)
-                    Text("Tell us you feelings")
+                    Text("Tell us your feelings")
+
                 }
                 .foregroundColor(Color.white)
                     .font(.custom("Rancho-Regular", size: 24))
@@ -112,7 +116,9 @@ struct RatingView: View {
                             self.ispresented = res
                             self.showSuccessAlert(message: "نقدر الحين نتحسن ونحسن")
                         }
+
                     })                    .font(Font.custom("Rancho-Regular", size: 24)).foregroundColor(Color("background")).background(
+
                         Rectangle()
                             .frame(width: 128, height: 50, alignment: .center)
                             .foregroundColor(.white)

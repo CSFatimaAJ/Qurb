@@ -80,7 +80,7 @@ struct QuestionView: View {
                         //          RatingView()
                         //    }.navigationBarBackButtonHidden(true)
                     }
-                } 
+                }
             }
         } .onTapGesture {
             self.dismisskeyboard()
