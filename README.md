@@ -28,8 +28,8 @@
 
 
 
-## Challenge Summary:
-<img width="828" alt="Screenshot 2023-03-01 at 10 18 05 AM" src="https://user-images.githubusercontent.com/81257375/222070442-f88de308-75ba-488b-aaf3-2ce32c3f204c.png">
+## الملخص:
+<img width="827" alt="Screenshot 2023-03-01 at 10 48 22 AM" src="https://user-images.githubusercontent.com/81257375/222077068-310d72c1-2a9a-45c3-86bd-262f763979d3.png">
 
 
 
